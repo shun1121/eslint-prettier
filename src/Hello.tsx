@@ -14,9 +14,9 @@ const Hello: React.VFC = () => {
       return 'Good Afternoon!!'
     } else {
       console.log(hours)
-      return 'Good Evening!!'
-    };;;;;;;;
 
+      return 'Good Evening!!'
+    }
   }
   const countUp = (): void => {
     setIncrement(increment + 1)
