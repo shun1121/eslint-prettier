@@ -27,7 +27,7 @@ const Hello: React.VFC = () => {
   }
   return (
     <>
-      <h2>Lets learn eslint-prettier setups</h2>
+      <h2>Lets learn eslint-prettier setups!!</h2>
       <h1>{greetingText(new Date())}</h1>
       <button style={{ backgroundColor: 'red' }} onClick={countUp}>
         +
