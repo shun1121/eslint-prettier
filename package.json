@@ -34,8 +34,10 @@
     "hooks": {
       "pre-commit": "lint-staged"
     },
-    "lint-staged": [
-      "npm run lint-fix"
-    ]
+    "lint-staged": {
+      "src": [
+        "npm run lint:fix"
+      ]
+    }
   }
 }
