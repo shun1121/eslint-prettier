@@ -28,8 +28,12 @@ const Hello: React.VFC = () => {
     <>
       <h2>Lets learn eslint-prettier setups</h2>
       <h1>{greetingText(new Date())}</h1>
-      <button onClick={countUp}>+</button>
-      <button onClick={countDown}>-</button>
+      <button style={{ backgroundColor: 'red' }} onClick={countUp}>
+        +
+      </button>
+      <button style={{ backgroundColor: 'lightBlue' }} onClick={countDown}>
+        -
+      </button>
       <p>{increment}</p>
     </>
   )
