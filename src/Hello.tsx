@@ -6,10 +6,10 @@ const Hello: React.VFC = () => {
   const greetingText: (date: Date) => string = (date) => {
     const hours = date.getHours() + 1
     console.log(new Date().getHours())
-    if (5 < hours && hours < 11) {
+    if (4 < hours && hours < 11) {
       console.log(hours)
       return 'Good Morning!!'
-    } else if (11 < hours && hours < 16) {
+    } else if (11 < hours && hours < 17) {
       console.log(hours)
       return 'Good Afternoon!!'
     } else {
