@@ -14,7 +14,6 @@ const Hello: React.VFC = () => {
       return 'Good Afternoon!!'
     } else {
       console.log(hours)
-
       return 'Good Evening!!'
     }
   }
