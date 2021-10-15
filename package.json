@@ -37,7 +37,9 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
-      "npm run lint:fix"
+      "eslint --fix",
+      "prettier --write",
+      "git add"
     ]
   },
   "dependencies": {}

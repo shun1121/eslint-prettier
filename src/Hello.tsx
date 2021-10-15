@@ -11,6 +11,7 @@ const Hello: React.VFC = () => {
       return 'Good Morning!!'
     } else if (11 < hours && hours < 17) {
       console.log(hours)
+
       return 'Good Afternoon!!'
     } else {
       console.log(hours)
