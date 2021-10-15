@@ -17,6 +17,7 @@ const Hello: React.VFC = () => {
       return 'Good Evening!!'
     }
   }
+
   const countUp = (): void => {
     setIncrement(increment + 1)
   }
@@ -26,10 +27,14 @@ const Hello: React.VFC = () => {
   }
   return (
     <>
-      <h2>Lets learn React</h2>
+      <h2>Lets create a setup for redux!!</h2>
       <h1>{greetingText(new Date())}</h1>
-      <button onClick={countUp}>+</button>
-      <button onClick={countDown}>-</button>
+      <button style={{ backgroundColor: 'red' }} onClick={countUp}>
+        +
+      </button>
+      <button style={{ backgroundColor: 'lightBlue' }} onClick={countDown}>
+        -
+      </button>
       <p>{increment}</p>
     </>
   )
