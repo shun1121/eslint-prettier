@@ -15,9 +15,7 @@ const Hello: React.VFC = () => {
     } else {
       console.log(hours)
       return 'Good Evening!!'
-    };;;
-
-
+    };;;;;;;;
 
   }
   const countUp = (): void => {
