@@ -1,9 +1,10 @@
 {
-  "name": "webpack_babel2",
+  "name": "eslint-prettier",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "tsc": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode=production",
     "start": "webpack-cli serve --mode development",
@@ -12,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^27.0.2",
     "@types/react": "^17.0.30",
     "@types/react-dom": "^17.0.9",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
@@ -20,10 +22,12 @@
     "eslint-config-prettier": "^8.3.0",
     "html-webpack-plugin": "^5.3.2",
     "husky": "^4.3.8",
+    "jest": "^27.2.5",
     "lint-staged": "^11.2.3",
     "prettier": "^2.4.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "ts-jest": "^27.0.6",
     "ts-loader": "^9.2.6",
     "typescript": "^4.4.4",
     "webpack": "^5.58.2",
@@ -40,5 +44,28 @@
       "npm run lint:fix"
     ]
   },
-  "dependencies": {}
+  "dependencies": {},
+  "jest": {
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "transformIgnorePatterns": [
+      "/node_modules/(?!(xxxx.*?\\.js$))"
+    ],
+    "testRegex": "(/test/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ],
+    "moduleNameMapper": {
+      "@(components|helper|redux|config|modules|style)?/(.*)": "<rootDir>/src/$1/$2",
+      "\\.(css|less|scss|sss|styl)$": "<rootDir>/node_modules/jest-css-modules"
+    },
+    "testURL": "https://example.koko.jp"
+  }
 }

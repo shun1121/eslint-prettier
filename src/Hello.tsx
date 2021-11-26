@@ -4,11 +4,12 @@ const Hello: React.VFC = () => {
   const [increment, setIncrement] = useState<number>(0)
 
   const greetingText: (date: Date) => string = (date) => {
-    const hours = date.getHours() + 1
+    const hours = 6
+    // const hours = date.getHours() + 1
     console.log(new Date().getHours())
     if (4 < hours && hours < 11) {
       console.log(hours)
-      return 'Good Morning!!'
+      return 'Guten Morgen!!'
     } else if (11 < hours && hours < 17) {
       console.log(hours)
       return 'Good Afternoon!!'
